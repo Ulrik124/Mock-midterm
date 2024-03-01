@@ -1,0 +1,14 @@
+my_list = [1, 2, 3]
+my_list[0] = 'a'  # Change the first element to 'a'
+print(my_list)  # This should print ['a', 2, 3]
+
+
+
+my_string = "cat"
+
+# Attempt to modify a string directly (this line is commented out because it would raise an error if executed):
+# my_string[0] = 'b'  # Uncommenting this line would raise a TypeError
+
+# The correct approach to "modify" a string:
+new_string = 'b' + my_string[1:]
+print(new_string)  # This will print "bat"
